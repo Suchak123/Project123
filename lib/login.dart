@@ -75,6 +75,7 @@ class Login extends StatelessWidget {
                                   child: SizedBox(
                                     height: 50,
                                     child: TextFormField(
+                                      controller: _emailAddressController,
                                       keyboardType: TextInputType.emailAddress,
                                       decoration: InputDecoration(
                                         enabledBorder: OutlineInputBorder(
@@ -98,6 +99,7 @@ class Login extends StatelessWidget {
                                   child: SizedBox(
                                     height: 50,
                                     child: TextFormField(
+                                      controller: _passwordController,
                                       keyboardType: TextInputType.visiblePassword,
                                       obscureText: true,
                                       decoration: InputDecoration(

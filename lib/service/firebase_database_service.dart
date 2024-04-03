@@ -7,6 +7,7 @@ class FirebaseDatabaseService {
   final _firestoreDb = FirebaseFirestore.instance;
 
   void createUserInCloudFirebase({required UserModel userModel}) async {
+    print('${userModel.toJson()}');
     try{
       final CollectionReference _usersCollectionReference = await _firestoreDb.collection('users');
       await _usersCollectionReference.add(userModel.toJson()).whenComplete(() {
