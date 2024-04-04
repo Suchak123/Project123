@@ -12,6 +12,9 @@ class Login extends StatelessWidget {
   final _passwordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
+
+    _emailAddressController.text = "testuser1@company.com";
+    _passwordController.text = "password";
     return Scaffold(
       backgroundColor: Colors.grey.withOpacity(0.1),
       body: SafeArea(
